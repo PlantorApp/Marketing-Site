@@ -1,22 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Plantor -- Let's Grow Good, Together!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
+    <title>Plantor</title>
 </head>
-
 <body>
-	<h1>Plantor</h1>
-	<h2>Let's Grow Good, Together!</h2>
-	
-	<footer>
+    <header>
+        <img src="assets/plantor_logo.svg" alt="Plantor native app Logotype">
+        <nav id="main-nav">
+      
+            <button id="menu-button"><i class="menu-icon fas fa-bars"><span class="visually-hidden">Menu</span>
+            </i></button>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Feature</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="mailto:plantor@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span class="visually-hidden">Contact Us</span></a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="about">
+        <div class="parallex">
+            <section class="hero-wrapper">
+                <div>
+                    <h1>Plantor</h1>
+                    <p>Wish to grow plants? <br> Get plant recommendations suitable to your environment. Plantor gives you plant recommendations to grow based on location, lighting, temperature, and season.</p>
+                    <button><a href=""></a>Download App Now!</button>
+                </div>
+            </section>
+    
+            <div id="features" class="features-wrapper">
+                <h2 class="expand">Features</h2>
+                <section>
+                    <img src="assets/Feature 1.png" alt="">
+                    <h3>Plant Suggestion</h3>
+                    <p>Providing suggestions on what plants users can grow at home based on location, season, and light exposure.</p>
+                </section>
+                <section>
+                    <img src="assets/Feature 2.png" alt="">
+                    <h3>Plant Wishlist</h3>
+                    <p>Users will be able to save plants that they want to grow in a wishlist.</p>
+                </section>
+                <section>
+                    <img src="assets/Feature 3.png" alt="">
+                    <h3>Weather Notification</h3>
+                    <p>Users will get notifications about seasonal changes and weather hazards.</p>
+                </section>
+            </div>
+
+            <div id="team" class="team-wrapper">
+                <h2 class="expand">Team Members</h2>
+                <section class="team1">
+                    <img src="assets/Jaspreet.png" alt="">
+                    <h3>Jaspreet Singh</h3>
+                    <p class="tagline">Back End Developer</p>
+                    <p>Jaspreet is responsible for back-end development tasks.</p>
+                    <div class="links">
+                        <a href="https://github.com/"><i class="fab fa-github-square"></i><span class="visually-hidden">GitHub</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team2">
+                    <img src="assets/Kamal.png" alt="">
+                    <h3>Kamaljit Kaur</h3>
+                    <p class="tagline">Full Stack Developer</p>
+                    <p>Kamal is responsible for front-end and back-end development tasks.</p>
+                    <div class="links">
+                        <a href="https://github.com/"><i class="fab fa-github-square"></i><span class="visually-hidden">GitHub</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team3">
+                    <img src="assets/Sumeet.png" alt="">
+                    <h3>Sumeet Kumar</h3>
+                    <p class="tagline">Development Lead</p>
+                    <p>Sumeet is responsible for delegating and overseeing development tasks.</p>
+                    <div class="links">
+                        <a href="https://github.com/"><i class="fab fa-github-square"></i><span class="visually-hidden">GitHub</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team4">
+                    <img src="assets/img-placeholder.png" alt="">
+                    <h3>Wez Ireland</h3>
+                    <p class="tagline">Product Engineer</p>
+                    <p>Wez is responsible for back-end and database related development tasks.</p>
+                    <div class="links">
+                        <a href="https://github.com/"><i class="fab fa-github-square"></i><span class="visually-hidden">GitHub</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team5">
+                    <img src="assets/Mahsa.png" alt="">
+                    <h3>Mahsa Shafiei</h3>
+                    <p class="tagline">UI/UX Designer</p>
+                    <p>Reetu is participating more on the UI side of the design process.</p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-behance-square"></i><span class="visually-hidden">Behance</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team5">
+                    <img src="assets/Reetu.png" alt="">
+                    <h3>Reetu Reetu</h3>
+                    <p class="tagline">Graphic Designer</p>
+                    <p>Reetu is participating more on the UI side of the design process.</p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-behance-square"></i><span class="visually-hidden">Behance</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team6">
+                    <img src="assets/Sayena.png" alt="">
+                    <h3>Sayena Einafshar</h3>
+                    <p class="tagline">UI/UX Lead</p>
+                    <p>Sayena is responsible for delegating and overseeing design tasks.</p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-behance-square"></i><span class="visually-hidden">Behance</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+                <section class="team7">
+                    <img src="assets/Victor.png" alt="">
+                    <h3>Victor Jianto</h3>
+                    <p class="tagline">PM / Product Designer</p>
+                    <p>Victor is responsible for ensuring that the project is on track.</p>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-behance-square"></i><span class="visually-hidden">Behance</span></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
+                    </div>
+                </section>
+
+            </div>
+
+            <div id="contact" class="contact-wrapper">
+                <h2>Contact Us</h2>
+                <p>Let us know if you have any questions or concerns by filling the form below. We will get back to you as soon as possible!</p>
+                <form>
+                    <div class="input-wrapper">
+                        <div class="name">
+                            <input type="text" id="name"  placeholder="Your email">
+                            <label for="name"><span class="visually-hidden">Your full name</span></label>
+                        </div>
+            
+                        <div class="email">
+                            <input type="email" id="email"  placeholder="Your email">
+                            <label for="email"><span class="visually-hidden">Your email</span></label>
+                        </div>
+                    </div>
+                    
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Give us the details"></textarea>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
         <div class="footer-wrapper">
             <p>Ⓒ 2021 All Rights Reserved</p>
         </div>
     </footer>
+    
 </body>
-
 </html>
+
+
+<!--       <button id="menu-button"><i class="fas fa-times"><span class="visually-hidden">Close</span>
+            </i></button> -->
+
+                    <!-- <li><a href="mailto:plantor@gmail.com"><i class="far fa-envelope"><span class="visually-hidden">Contact Us</span></i></a></li> -->

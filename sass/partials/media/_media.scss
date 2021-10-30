@@ -1,0 +1,19 @@
+img {
+    max-width: 70%;
+    height: auto;
+}
+header img {
+    width: 20px;
+}
+
+
+@media screen and (min-width:768px) {
+    header img {
+        max-width: 30px;
+    }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+}
