@@ -85,6 +85,7 @@ p {
 
 .hero-wrapper p {
   color: #555555;
+  margin: auto;
 }
 
 .hero-wrapper h2 {
@@ -105,7 +106,10 @@ p {
 
 @media screen and (min-width: 768px) {
   h2 {
-    margin: 2rem 0;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }
 
@@ -160,15 +164,15 @@ main {
   background-image: url("../../../assets/HeroimageV02.png");
   background-attachment: fixed;
   background-size: 140%;
-  background-position: center 34px;
+  background-position: center 30px;
   background-repeat: no-repeat;
+  background-color: #FCFAF7;
   padding: 18rem 0;
-  height: 100vh;
 }
 
 .hero-wrapper div {
   background-color: #ded9cb;
-  padding: 1.5rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 
@@ -236,7 +240,6 @@ input, textarea {
 
 form button {
   background-color: #fff;
-  width: 100%;
   height: 45px;
   border-radius: 50px;
   color: #827344;
@@ -252,49 +255,46 @@ input:focus, textarea:focus {
 
 @media screen and (min-width: 768px) {
   main {
-    background-color: #B4A888;
-    padding: 8.5% 0 0 0;
+    background-color: #ded9cb;
+    background-size: 100%;
+    background-position: center 30px;
+    padding: 24rem 0 0 0;
   }
   .features-wrapper, .team-wrapper {
     padding: 8rem 4rem;
     text-align: left;
   }
   .contact-wrapper {
-    padding: 8rem 4rem;
+    padding: 4rem;
     text-align: center;
   }
   #contact p {
-    padding: .5rem 4rem;
+    padding: 0 6rem;
     text-align: center;
   }
-  .hero-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
-  }
-  .team-wrapper {
+  .team-wrapper, .features-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 0 3rem;
+    gap: 0 1rem;
   }
   .hero-wrapper div {
     background-color: #ded9cbdc;
-    padding: 4rem 2rem 4rem 4rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: 2rem 4rem;
+    text-align: left;
   }
   .features-wrapper p, .team-wrapper p, .features-wrapper h3, .team-wrapper h3, .links {
     max-width: 100%;
     text-align: left;
   }
-  .features-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 0 2rem;
+  .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
+    margin: 0;
   }
   form {
     display: -webkit-box;
@@ -305,36 +305,33 @@ input:focus, textarea:focus {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     gap: 1rem 0;
-    padding: 1rem 7rem;
+    padding: 0 7rem;
+    margin: 0;
   }
   input {
-    width: 384px;
+    width: 414px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1020px) {
   main {
-    padding: 6% 0 0 0;
-    background-position: center 60px;
+    background-size: 90%;
+    padding: 30rem 0 0 0;
   }
   .team-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
     gap: 2rem;
-  }
-  .hero-wrapper div {
-    padding: 4.5rem 2rem 4.5rem 4rem;
   }
   form {
     max-width: 384px;
     margin: auto;
   }
   #contact p {
-    max-width: 60%;
-    margin: auto;
+    max-width: 50%;
+    margin: 1rem auto;
   }
   #team h2 {
     margin: 0;
@@ -353,11 +350,6 @@ input:focus, textarea:focus {
     gap: 0 3rem;
   }
   .hero-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 0;
     padding: 0;
   }
   .hero-wrapper div {
@@ -391,11 +383,14 @@ header img {
 
 @media screen and (min-width: 768px) {
   header img {
-    max-width: 30px;
+    width: 24px;
   }
   img {
     max-width: 100%;
     height: auto;
+  }
+  .hero-wrapper img {
+    width: 60px;
   }
 }
 
@@ -420,6 +415,7 @@ nav ul {
 #main-nav ul a {
   text-decoration: none;
   color: grey;
+  font-size: .9rem;
 }
 
 .show-menu {

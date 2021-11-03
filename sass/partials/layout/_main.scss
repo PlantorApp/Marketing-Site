@@ -2,16 +2,15 @@ main {
     background-image: url("../../../assets/HeroimageV02.png");
     background-attachment: fixed;
     background-size: 140%;
-    background-position: center 34px;
+    background-position: center 30px;
     background-repeat: no-repeat;
-    // background-color: #B4A888;
+    background-color: #FCFAF7;
     padding: 18rem 0;
-    height: 100vh;
 }
 
 .hero-wrapper div{
     background-color: #ded9cb;
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     text-align: center;
 }
 .hero-wrapper button {
@@ -70,8 +69,10 @@ input:focus, textarea:focus {
 
 @media screen and (min-width:768px) {
     main {
-        background-color: #B4A888;
-        padding: 8.5% 0 0 0;
+        background-color: #ded9cb;
+        background-size: 100%;
+        background-position: center 30px;
+        padding: 24rem 0 0 0;
     }
 
     .features-wrapper, .team-wrapper{ 
@@ -79,62 +80,60 @@ input:focus, textarea:focus {
         text-align: left;
     }
     .contact-wrapper {
-        padding: 8rem 4rem;
+        padding: 4rem;
         text-align: center;
     }
     #contact p{
-        padding: .5rem 4rem;
+        padding: 0 6rem;
         text-align: center;
     }
-    .hero-wrapper {
-        @include formGrid;
+    .team-wrapper, .features-wrapper {
+        @include featureGrid;
     }
-    .team-wrapper {
-        @include teamGridOne;
-    }
-    .hero-wrapper div{
+
+    .hero-wrapper div {
         background-color: #ded9cbdc;
-        padding: 4rem 2rem 4rem 4rem;
+        @include heroGrid;
+        padding: 2rem 4rem;
+        text-align: left;
     }
+
     .features-wrapper p, .team-wrapper p, .features-wrapper h3, .team-wrapper h3 , .links {
         max-width: 100%;
         text-align: left;
     }
-
-    .features-wrapper {
-        @include featureGrid;
+    .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
+        margin: 0;
     }
     form {
         @include form;
-        padding: 1rem 7rem;
+        padding: 0 7rem;
+        margin: 0;
     }
  
     input {
-        width: 384px;
+        width: 414px;
     }
 }
 
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1020px) {
     main {
-        // background-image: url("../../../assets/Hero image-desktop.png");
-        padding: 6% 0 0 0;
-        background-position: center 60px;
+        background-size: 90%;
+        padding: 30rem 0 0 0;
     }
     .team-wrapper {
         @include teamGrid;
         gap: 2rem;
     }
-    .hero-wrapper div{
-        padding: 4.5rem 2rem 4.5rem 4rem;
-    }
+
     form {
         max-width: 384px;
         margin: auto;
     }
     #contact p {
-        max-width: 60%;
-        margin: auto;
+        max-width: 50%;
+        margin: 1rem auto;
     }
     #team h2 {
         margin: 0;
@@ -153,7 +152,7 @@ input:focus, textarea:focus {
         @include teamGridOne;
     }
     .hero-wrapper {
-        @include heroGridOne;
+        // @include heroGridOne;
         padding: 0;
     }
     .hero-wrapper div {
