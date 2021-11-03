@@ -1,11 +1,12 @@
 main {
     background-image: url("../../../assets/HeroimageV02.png");
     background-attachment: fixed;
-    background-size: 150%;
-    background-position: center -2px;
+    background-size: 140%;
+    background-position: center 34px;
     background-repeat: no-repeat;
     // background-color: #B4A888;
-    padding: 32vh 0 0 0;
+    padding: 18rem 0;
+    height: 100vh;
 }
 
 .hero-wrapper div{
@@ -64,6 +65,9 @@ form button {
 input:focus, textarea:focus {
     outline: 1px solid #827344;
 }
+
+
+
 @media screen and (min-width:768px) {
     main {
         background-color: #B4A888;
