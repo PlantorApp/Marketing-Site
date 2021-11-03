@@ -36,7 +36,7 @@ Tables of content
 }
 
 .fab {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .links {
@@ -69,6 +69,10 @@ h2 {
   margin: 0.5rem 0;
 }
 
+h3, p {
+  color: #635834;
+}
+
 .hero-wrapper p {
   color: #555555;
 }
@@ -81,12 +85,14 @@ h2 {
   margin: 0.8rem auto;
 }
 
-#team h2 {
-  margin: 0;
-}
-
 #team h3 {
   margin: .5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin: 2rem 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -137,13 +143,13 @@ body {
 }
 
 main {
-  background-image: url("../../../assets/Hero image-mobile.png");
+  background-image: url("../../../assets/Hero imageV02.png");
   background-attachment: fixed;
   background-size: contain;
   background-position: center 40px;
   background-repeat: no-repeat;
   background-color: #B4A888;
-  padding: 32vh 0 0 0;
+  padding: 72% 0 0 0;
 }
 
 .hero-wrapper div {
@@ -178,13 +184,18 @@ main {
 
 .features-wrapper p, .team-wrapper p, .features-wrapper h3, .team-wrapper h3, .links {
   max-width: 70%;
-  margin: auto;
+  margin: .5rem auto;
   text-align: left;
 }
 
 .contact-wrapper {
   padding: 6rem 1.5rem;
   background-color: #fcfaf7;
+}
+
+form, #contact p {
+  margin: 1rem;
+  text-align: left;
 }
 
 input, textarea {
@@ -206,18 +217,25 @@ form button {
   font-weight: 500;
   border: 1px solid #DDDDDD;
   font-family: "Quicksand", sans-serif;
+  margin: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
   main {
-    background-image: url("../../../assets/Hero image-tablet.png");
     background-color: #B4A888;
-    background-position: center 60px;
-    padding: 3rem 0 0 0;
+    padding: 8.5% 0 0 0;
   }
-  .features-wrapper, .team-wrapper, .contact-wrapper {
+  .features-wrapper, .team-wrapper {
     padding: 8rem 4rem;
     text-align: left;
+  }
+  .contact-wrapper {
+    padding: 8rem 4rem;
+    text-align: center;
+  }
+  #contact p {
+    padding: .5rem 4rem;
+    text-align: center;
   }
   .hero-wrapper {
     display: -ms-grid;
@@ -225,6 +243,13 @@ form button {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
+  }
+  .team-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0 3rem;
   }
   .hero-wrapper div {
     background-color: #ded9cbdc;
@@ -234,19 +259,12 @@ form button {
     max-width: 100%;
     text-align: left;
   }
-  .team-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 0 3rem;
-  }
   .features-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 0 3rem;
+    gap: 0 2rem;
   }
   form {
     display: -webkit-box;
@@ -257,23 +275,17 @@ form button {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     gap: 1rem 0;
-    padding: 1rem 10rem;
-  }
-  .input-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
+    padding: 1rem 7rem;
   }
   input {
-    width: 275px;
+    width: 384px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   main {
-    background-image: url("../../../assets/Hero image-desktop.png");
+    padding: 6% 0 0 0;
+    background-position: center 60px;
   }
   .team-wrapper {
     display: -ms-grid;
@@ -281,6 +293,56 @@ form button {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+    gap: 2rem;
+  }
+  .hero-wrapper div {
+    padding: 4.5rem 2rem 4.5rem 4rem;
+  }
+  form {
+    max-width: 384px;
+    margin: auto;
+  }
+  #contact p {
+    max-width: 60%;
+    margin: auto;
+  }
+  #team h2 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding: 0;
+  }
+  .team-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0 3rem;
+  }
+  .hero-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+  }
+  .hero-wrapper div {
+    padding: 14rem 2rem 6rem 4rem;
+  }
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  #contact p {
+    max-width: 40%;
+    margin: auto;
+  }
+  input {
+    max-width: 400px;
   }
 }
 
@@ -342,7 +404,9 @@ button {
 
 @media screen and (min-width: 768px) {
   nav div {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #menu ul {
     display: -webkit-box;
