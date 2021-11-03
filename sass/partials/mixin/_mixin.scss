@@ -6,7 +6,7 @@
 @mixin mobileGrid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem 0;
+    gap:  0;
 }
 @mixin featureGrid {
     display: grid;
@@ -38,7 +38,7 @@
 @mixin CTA {
     background-color: #827344;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 50px;
     color: #fff;
     font-size: 1rem;
@@ -47,10 +47,10 @@
 @mixin secondaryButton {
     background-color: #fff;
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 50px;
     color: #827344;
-    font-weight: 500;
+    font-weight: 600;
     border: 1px solid #DDDDDD;
     font-family: "Quicksand", sans-serif;
 }
@@ -58,5 +58,6 @@
 @mixin input {
     border: none;
     border-bottom: 1px solid #827344;
+    background-color: #82734407;
 }
 
