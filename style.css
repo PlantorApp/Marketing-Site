@@ -80,7 +80,7 @@ h3, p {
 }
 
 p {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .hero-wrapper p {
@@ -141,6 +141,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,8 +171,13 @@ main {
   padding: 18rem 0;
 }
 
+.hero-wrapper {
+  text-align: center;
+}
+
 .hero-wrapper div {
   background-color: #ded9cb;
+  margin-top: 1.5rem;
   padding: 3rem 1.5rem;
   text-align: center;
 }
@@ -369,7 +375,7 @@ input:focus, textarea:focus {
 }
 
 img {
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -378,7 +384,8 @@ header img {
 }
 
 .hero-wrapper img {
-  width: 80px;
+  width: 50px;
+  opacity: 70%;
 }
 
 @media screen and (min-width: 768px) {

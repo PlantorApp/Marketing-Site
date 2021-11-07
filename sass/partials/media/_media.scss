@@ -1,14 +1,18 @@
 img {
-    max-width: 70%;
+    max-width: 90%;
     height: auto;
 }
 header img {
     width: 20px;
 }
 .hero-wrapper img {
-    width: 80px;
+    width: 50px;
+    opacity: 70%;
 }
+// .features-wrapper img {
+//     max-width: 70%;
 
+// }
 @media screen and (min-width:768px) {
     header img {
         width: 24px;
