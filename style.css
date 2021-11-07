@@ -41,6 +41,7 @@ Tables of content
 
 .links {
   padding: .5rem 0;
+  text-align: left;
 }
 
 .links a {
@@ -162,7 +163,7 @@ main {
   background-position: center 30px;
   background-repeat: no-repeat;
   background-color: #FCFAF7;
-  padding: 18rem 0;
+  padding: 18rem 0 0 0;
 }
 
 .hero-wrapper {
@@ -200,11 +201,6 @@ main {
   background-color: #FCFAF7;
 }
 
-.features-wrapper p, .team-wrapper p, .links {
-  max-width: 90%;
-  margin: .5rem auto;
-}
-
 .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
   margin: 3rem 0;
 }
@@ -215,10 +211,15 @@ main {
 
 .cards {
   background-color: #fff;
-  padding: .5rem;
+  padding: 1.5rem;
   border-radius: .8rem;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.team-wrapper h3, .team-wrapper p {
+  margin: .5rem 0;
+  text-align: left;
 }
 
 .contact-wrapper {
@@ -230,8 +231,8 @@ main {
   background-color: #fcfaf7;
 }
 
-#contact p {
-  margin: 1rem;
+.contact-wrapper p {
+  margin: 1rem .5rem;
 }
 
 form {
@@ -251,6 +252,7 @@ input, textarea {
 
 form button {
   background-color: #fff;
+  width: 100%;
   height: 45px;
   border-radius: 50px;
   color: #827344;
@@ -408,7 +410,7 @@ aside button {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -422,7 +424,6 @@ header img {
 }
 
 .team-wrapper img {
-  padding: 0.5rem 0;
   border-radius: 15px;
 }
 

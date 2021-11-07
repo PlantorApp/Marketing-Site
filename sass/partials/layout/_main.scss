@@ -5,7 +5,7 @@ main {
     background-position: center 30px;
     background-repeat: no-repeat;
     background-color: #FCFAF7;
-    padding: 18rem 0;
+    padding: 18rem 0 0 0;
 }
 // HERO
 .hero-wrapper {
@@ -30,11 +30,6 @@ main {
     padding: 6rem 1.5rem;
     background-color: #FCFAF7;
 }
-.features-wrapper p, .team-wrapper p, .links{
-    max-width: 90%;
-    margin: .5rem auto;
-    // text-align: left;
-}
 
 .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
     margin: 3rem 0;
@@ -48,6 +43,10 @@ main {
 .cards {
     @include cards;
 }
+.team-wrapper h3, .team-wrapper p{
+    margin: .5rem 0;
+    text-align: left;
+}
 
 
 
@@ -59,8 +58,8 @@ main {
     padding: 6rem 1.5rem;
     background-color: #fcfaf7;
 }
-#contact p {
-    margin: 1rem;
+.contact-wrapper p {
+    margin: 1rem .5rem;
 }
 form {
     margin: 2rem 0;
