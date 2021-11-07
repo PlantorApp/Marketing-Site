@@ -360,9 +360,6 @@ aside button {
         grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
-  .team-wrapper {
-    gap: 2rem;
-  }
   .cards {
     max-width: 100%;
   }
@@ -370,7 +367,7 @@ aside button {
     padding: 6rem 10rem;
   }
   .contact-wrapper p {
-    margin: 1.3rem;
+    margin: 1.3rem 0;
   }
   form {
     display: -webkit-box;
@@ -382,9 +379,12 @@ aside button {
             flex-flow: column wrap;
     gap: 1rem 0;
   }
-  input, textarea {
-    width: 414px;
-    margin: .5rem auto;
+  input, textarea, .contact-wrapper p {
+    width: 450px;
+    margin: 0 auto;
+  }
+  input:first-of-type {
+    margin: .8rem;
   }
 }
 
@@ -399,41 +399,21 @@ aside button {
   .features-wrapper, .team-wrapper {
     padding: 10rem 4rem;
   }
-  .contact-wrapper {
-    padding: 10rem 18rem;
-  }
-  .features-wrapper {
+  .team-wrapper, .features-wrapper {
     gap: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   main {
-    padding: 0;
-  }
-  .team-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 0 3rem;
+    background-position: center 15px;
+    padding: 40rem 0 0 0;
   }
   .hero-wrapper {
-    padding: 0;
+    padding: 3rem 4rem;
   }
-  .hero-wrapper div {
-    padding: 14rem 2rem 6rem 4rem;
-  }
-  form {
-    max-width: 400px;
-    margin: auto;
-  }
-  #contact p {
-    max-width: 40%;
-    margin: auto;
-  }
-  input {
-    max-width: 400px;
+  .features-wrapper, .team-wrapper {
+    padding: 10rem 4rem;
   }
 }
 
@@ -471,6 +451,10 @@ header img {
   }
   .features-wrapper img {
     max-width: 100%;
+  }
+  .hero-wrapper img {
+    width: 60px;
+    opacity: 100%;
   }
 }
 

@@ -166,9 +166,7 @@ aside button {
     .team-wrapper, .features-wrapper {
         @include featureGrid;
     }
-    .team-wrapper {
-        gap: 2rem;
-    }
+
     .cards {
         max-width: 100%;
     }
@@ -177,15 +175,18 @@ aside button {
         padding: 6rem 10rem;
     }
     .contact-wrapper p {
-        margin: 1.3rem;
+        margin: 1.3rem 0;
     }
     form {
         @include form;
     }
  
-    input, textarea {
-        width: 414px;
-        margin: .5rem auto;
+    input, textarea, .contact-wrapper p {
+        width: 450px;
+        margin: 0 auto;
+    }
+    input:first-of-type {
+        margin: .8rem;
     }
 
 
@@ -204,12 +205,11 @@ aside button {
     .features-wrapper, .team-wrapper{ 
         padding: 10rem 4rem;
     }
-    .contact-wrapper {
-        padding: 10rem 18rem;
-    }
-    .features-wrapper {
+
+    .team-wrapper, .features-wrapper {
         gap: 2rem;
     }
+
 
 }
 
@@ -217,29 +217,18 @@ aside button {
 
 
 @media screen and (min-width:1440px) {
+
     main {
-        // background-image: url("../../../assets/Hero image-desktop.png");
-        padding: 0;
+        background-position: center 15px;
+        padding: 40rem 0 0 0;
     }
-    .team-wrapper {
-        @include teamGridOne;
-    }
+
     .hero-wrapper {
-        // @include heroGridOne;
-        padding: 0;
+        padding: 3rem 4rem;
     }
-    .hero-wrapper div {
-        padding: 14rem 2rem 6rem 4rem;
+    .features-wrapper, .team-wrapper{ 
+        padding: 10rem 4rem;
     }
-    form {
-        max-width: 400px;
-        margin: auto;
-    }
-    #contact p {
-        max-width: 40%;
-        margin: auto;
-    }
-    input {
-        max-width: 400px;
-    }
+ 
+
 }
