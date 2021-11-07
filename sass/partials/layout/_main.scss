@@ -7,35 +7,28 @@ main {
     background-color: #FCFAF7;
     padding: 18rem 0;
 }
-
+// HERO
 .hero-wrapper {
     text-align: center;
-    // position: relative;
-    // bottom: 10rem;
 }
 .hero-wrapper div{
     background-color: #ded9cb;
     margin-top: 1.5rem;
     padding: 3rem 1.5rem;
     text-align: center;
-
-    // background-image: linear-gradient(180deg, #ded9cb83, #ded9cb);
 }
 .hero-wrapper button {
     @include CTA;
     margin: 2rem 0;
 }
+
+
+// FEATURE
 .features-wrapper, .team-wrapper {
     text-align: center;
     @include mobileGrid;
     padding: 6rem 1.5rem;
     background-color: #FCFAF7;
-}
-.team-wrapper  {
-    gap: 2rem 0;
-}
-.contact-wrapper {
-    text-align: center;
 }
 .features-wrapper p, .team-wrapper p, .links{
     max-width: 90%;
@@ -46,17 +39,25 @@ main {
 .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
     margin: 3rem 0;
 }
+
+
+// TEAM
+.team-wrapper  {
+    gap: 2rem 0;
+}
+.cards {
+    @include cards;
+}
+
+
+
+// CONTACT
+.contact-wrapper {
+    text-align: center;
+}
 .contact-wrapper {
     padding: 6rem 1.5rem;
     background-color: #fcfaf7;
-}
-
-aside {
-    background-color: rgba(255, 255, 255, 0.534);
-    padding: 6rem 1.5rem;
-}
-aside button {
-    @include CTA;
 }
 #contact p {
     margin: 1rem;
@@ -78,6 +79,16 @@ form button {
 }
 input:focus, textarea:focus {
     outline: 1px solid #827344;
+}
+
+
+// ASIDE
+aside {
+    background-color: #fcfaf77c;
+    padding: 6rem 1.5rem;
+}
+aside button {
+    @include CTA;
 }
 
 

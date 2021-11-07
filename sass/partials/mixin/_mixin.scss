@@ -47,7 +47,7 @@
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
 }
 
 @mixin secondaryButton {
@@ -58,6 +58,7 @@
     font-weight: 600;
     border: 1px solid #DDDDDD;
     font-family: "Quicksand", sans-serif;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
 }
 
 @mixin input {
@@ -66,6 +67,9 @@
     background-color: #82734407;
 }
 
-@mixin card {
+@mixin cards {
     background-color: #fff;
+    padding: .5rem;
+    border-radius: .8rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
 }
