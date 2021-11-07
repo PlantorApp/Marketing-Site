@@ -46,6 +46,8 @@
     border-radius: 50px;
     color: #fff;
     font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
 }
 
 @mixin secondaryButton {
@@ -64,3 +66,6 @@
     background-color: #82734407;
 }
 
+@mixin card {
+    background-color: #fff;
+}
