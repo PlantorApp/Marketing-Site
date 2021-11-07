@@ -10,22 +10,27 @@ header img {
     opacity: 80%;
 }
 .team-wrapper img {
-    border-radius: 15px;
+    border-radius: 10px;
 }
-// .features-wrapper img {
-//     max-width: 70%;
 
-// }
+
+@media screen and (min-width:425px) {
+
+    .features-wrapper img {
+        max-width: 90%;
+        height: auto;
+    }
+
+}
+
 @media screen and (min-width:768px) {
     header img {
         width: 24px;
     }
     img {
         max-width: 100%;
-        height: auto;
     }
-    .hero-wrapper img {
-        width: 60px;
+    .features-wrapper img {
+        max-width: 100%;
     }
-
 }

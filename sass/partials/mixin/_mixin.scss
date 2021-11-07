@@ -11,7 +11,7 @@
 @mixin featureGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 1rem;
+    gap: 1rem;
 }
 @mixin teamGridOne {
     display: grid;
@@ -42,6 +42,7 @@
 @mixin CTA {
     background-color: #827344;
     width: 100%;
+    max-width: 300px;
     height: 45px;
     border-radius: 50px;
     color: #fff;
@@ -53,6 +54,7 @@
 @mixin secondaryButton {
     background-color: #fff;
     width: 100%;
+    max-width: 300px;
     height: 45px;
     border-radius: 50px;
     color: #827344;
@@ -70,7 +72,7 @@
 
 @mixin cards {
     background-color: #fff;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: .8rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
 }

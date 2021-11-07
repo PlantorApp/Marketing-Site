@@ -2,7 +2,7 @@ main {
     background-image: url("../../../assets/HeroimageV02.png");
     background-attachment: fixed;
     background-size: 140%;
-    background-position: center 30px;
+    background-position: center 38px;
     background-repeat: no-repeat;
     background-color: #FCFAF7;
     padding: 18rem 0 0 0;
@@ -13,13 +13,9 @@ main {
 }
 .hero-wrapper div{
     background-color: #ded9cb;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 3rem 1.5rem;
     text-align: center;
-}
-.hero-wrapper button {
-    @include CTA;
-    margin: 2rem 0;
 }
 
 
@@ -30,9 +26,8 @@ main {
     padding: 6rem 1.5rem;
     background-color: #FCFAF7;
 }
-
 .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 
@@ -74,7 +69,7 @@ input, textarea {
 }
 form button {
     @include secondaryButton;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 input:focus, textarea:focus {
     outline: 1px solid #827344;
@@ -85,6 +80,7 @@ input:focus, textarea:focus {
 aside {
     background-color: #fcfaf77c;
     padding: 6rem 1.5rem;
+    text-align: center;
 }
 aside button {
     @include CTA;
@@ -94,11 +90,43 @@ aside button {
 
 @media screen and (min-width:375px) {
     main {
-        padding: 10rem 0 0 0;
+        padding: 8.5rem 0 0 0;
     }
-    .features-wrapper p, .team-wrapper p, .links{
-        max-width: 75%;
+    .hero-wrapper div {
+        margin-top: 4rem;
     }
+    .features-wrapper p{
+        max-width: 82%;
+        margin: 1rem auto;
+    }
+    .contact-wrapper p {
+        margin: 1rem;
+    }
+
+    
+}
+
+@media screen and (min-width:425px) {
+    main {
+        padding: 8rem 0 0 0;
+        background-size: 120%;
+        background-position: center 45px;
+    }
+    .cards {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    .contact-wrapper, .features-wrapper {
+        padding: 6rem 3rem;
+    }
+    
+    .features-wrapper section {
+        margin-bottom: 5rem;
+    }
+    .hero-wrapper p{
+        padding: 0 1rem;
+    }
+
 }
 
 
@@ -106,73 +134,83 @@ aside button {
     main {
         background-color: #ded9cb;
         background-size: 100%;
-        background-position: center 30px;
-        padding: 24rem 0 0 0;
+        background-position: center 50px;
+        padding: 28rem 0 0 0;
     }
-
-    .features-wrapper, .team-wrapper{ 
-        padding: 8rem 4rem;
+    .hero-wrapper p {
+        margin: 0;
         text-align: left;
     }
-    .contact-wrapper {
-        padding: 4rem;
-        text-align: center;
-    }
-    #contact p{
-        padding: 0 6rem;
-        text-align: center;
-    }
-    .team-wrapper, .features-wrapper {
-        @include featureGrid;
-    }
-
     .hero-wrapper div {
-        background-color: #ded9cbdc;
+        margin: 0;
+        padding: 0;
+    }
+    .hero-wrapper  {
+        background-color: #ded9cb;
         @include heroGrid;
-        padding: 2rem 4rem;
-        text-align: left;
+        align-items: center;
+        padding: 3rem;
     }
 
-    .features-wrapper p, .team-wrapper p, .features-wrapper h3, .team-wrapper h3 , .links {
-        max-width: 100%;
-        text-align: left;
-    }
     .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
         margin: 0;
     }
-    form {
-        @include form;
-        padding: 0 7rem;
+    .features-wrapper p {
+        max-width: 100%;
         margin: 0;
     }
- 
-    input {
-        width: 414px;
+    .features-wrapper, .team-wrapper{ 
+        padding: 8rem 3rem;
     }
+
+    .team-wrapper, .features-wrapper {
+        @include featureGrid;
+    }
+    .team-wrapper {
+        gap: 2rem;
+    }
+    .cards {
+        max-width: 100%;
+    }
+    
+    .contact-wrapper {
+        padding: 6rem 10rem;
+    }
+    .contact-wrapper p {
+        margin: 1.3rem;
+    }
+    form {
+        @include form;
+    }
+ 
+    input, textarea {
+        width: 414px;
+        margin: .5rem auto;
+    }
+
+
 }
 
 
-@media screen and (min-width:1020px) {
+@media screen and (min-width:1024px) {
     main {
-        background-size: 90%;
-        padding: 30rem 0 0 0;
+        background-size: 100%;
+        padding: 35rem 0 0 0;
     }
-    .team-wrapper {
-        @include teamGrid;
+
+    .hero-wrapper {
+        padding: 3rem 4rem;
+    }
+    .features-wrapper, .team-wrapper{ 
+        padding: 10rem 4rem;
+    }
+    .contact-wrapper {
+        padding: 10rem 18rem;
+    }
+    .features-wrapper {
         gap: 2rem;
     }
 
-    form {
-        max-width: 384px;
-        margin: auto;
-    }
-    #contact p {
-        max-width: 50%;
-        margin: 1rem auto;
-    }
-    #team h2 {
-        margin: 0;
-    }
 }
 
 
