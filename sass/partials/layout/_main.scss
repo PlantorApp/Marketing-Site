@@ -14,10 +14,12 @@ main {
 .hero-wrapper div{
     background-color: #ded9cb;
     margin-top: 1rem;
-    padding: 3rem 1.5rem;
-    text-align: center;
+    padding: 3rem 1rem;
+    text-align: left;
 }
-
+.hero-wrapper p {
+    margin: 1rem 0;
+}
 
 // FEATURE
 .features-wrapper, .team-wrapper {
@@ -137,14 +139,13 @@ aside button {
         background-position: center 50px;
         padding: 28rem 0 0 0;
     }
-    .hero-wrapper p {
-        margin: 0;
+    .hero-wrapper div{
         text-align: left;
     }
-    .hero-wrapper div {
-        margin: 0;
+    .hero-wrapper p{
         padding: 0;
     }
+    
     .hero-wrapper  {
         background-color: #ded9cb;
         @include heroGrid;
@@ -196,12 +197,14 @@ aside button {
 @media screen and (min-width:1024px) {
     main {
         background-size: 100%;
-        padding: 35rem 0 0 0;
+        background-position: center 25px;
+        padding: 38rem 0 0 0;
     }
 
     .hero-wrapper {
         padding: 3rem 4rem;
     }
+ 
     .features-wrapper, .team-wrapper{ 
         padding: 10rem 4rem;
     }
