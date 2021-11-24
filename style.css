@@ -238,8 +238,15 @@ main {
 }
 
 .team-wrapper h3, .team-wrapper p {
-  margin: .5rem 0;
   text-align: left;
+}
+
+.team-wrapper h3 {
+  margin: .5rem 0;
+}
+
+.team-wrapper p {
+  margin-top: 0;
 }
 
 .link-wrapper {
