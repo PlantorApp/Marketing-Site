@@ -11,11 +11,22 @@ nav ul {
     font-size: .9rem;
 }
 
+
+nav div {
+    display: none;
+}
+
 .show-menu {
     display: block;
 }
-nav div {
-    display: none;
+
+.show-menu header nav ul{
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 100vh;
+    background-color: #fff;
 }
 button {
     background-color: rgba(255, 255, 255, 0);
