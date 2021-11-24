@@ -91,11 +91,11 @@ aside {
     background-color: #B7A878;
     padding: 6rem 1.5rem;
     text-align: center;
+    // color: #FCFAF7;
 }
-aside button {
-    @include CTA;
+.dl-wrapper {
+    @include form;
 }
-
 
 
 @media screen and (min-width:375px) {
@@ -103,7 +103,7 @@ aside button {
         padding: 18rem 0 0 0;
     }
     .hero-wrapper  {
-        padding: 1.5rem;
+        padding: 2rem  1.5rem;
     }
     .features-wrapper p{
         max-width: 82%;
@@ -113,7 +113,7 @@ aside button {
         margin: 1rem;
     }
     .team-wrapper {
-        padding: 5rem 0;
+        padding: 6rem 3rem;
     }
     
 }
@@ -135,7 +135,7 @@ aside button {
         margin-bottom: 5rem;
     }
     .hero-wrapper {
-        padding: 2rem;
+        padding: 2rem 2.5rem;
     }
 
 }
@@ -199,7 +199,13 @@ aside button {
     input:first-of-type {
         margin: .8rem;
     }
-
+    .dl-wrapper {
+        @include formGrid;
+        padding: 1rem 12rem;
+        gap: 2rem;
+   
+    }
+    
 
 }
 
@@ -223,7 +229,9 @@ aside button {
     .team-wrapper{ 
         padding: 8rem ;
     }
-
+    .dl-wrapper {
+        padding: 1rem 15rem;
+    }
 }
 
 

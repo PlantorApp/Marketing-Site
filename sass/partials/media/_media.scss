@@ -13,7 +13,10 @@ header img {
 .team-wrapper img {
     border-radius: 10px;
 }
-
+.dl-wrapper img {
+    width: 40%;
+    margin: auto;
+}
 
 @media screen and (min-width:425px) {
 
@@ -38,4 +41,9 @@ header img {
         width: 60px;
         opacity: 100%;
     }
+
+    .dl-wrapper img {
+        width: 150px;
+    }
+    
 }
