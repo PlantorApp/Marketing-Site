@@ -232,15 +232,19 @@ aside button {
 @media screen and (min-width:1440px) {
 
     main {
-        background-position: center 15px;
-        padding: 40rem 0 0 0;
+        background-position: center -10px;
+        padding: 42rem 0 0 0;
     }
 
     .hero-wrapper {
-        padding: 3rem 4rem;
+        padding: 3rem 18rem;
     }
     .features-wrapper, .team-wrapper{ 
-        padding: 10rem 4rem;
+        padding: 10rem 12rem;
+    }
+ 
+    .team-wrapper{ 
+        padding: 10rem 18rem;
     }
  
 

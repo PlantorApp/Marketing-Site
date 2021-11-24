@@ -54,12 +54,15 @@ p {
     h2 {
         margin: 1rem 0;
     }
+    .team-wrapper h2, .contact-wrapper h2 {
+        margin-bottom: 3rem;
+    }
 
     h3 {
         font-size: 1rem;
     }
 }
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1024px) {
 
     h1 {
         font-size: 4rem;
@@ -68,7 +71,5 @@ p {
     h2 {
         font-size: 2rem;
     }
-    #features h2{
-        margin-bottom: 3rem;
-    }
+
 }
