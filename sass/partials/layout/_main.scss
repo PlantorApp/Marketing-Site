@@ -49,9 +49,10 @@ main {
 }
 .team-wrapper h3 {
     margin: .5rem 0;
+    letter-spacing: -2%;
 }
 .team-wrapper p {
-    margin-top: 0;
+    margin-top: .2rem;
 }
 .link-wrapper {
     @include links;
