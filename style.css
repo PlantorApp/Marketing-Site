@@ -551,7 +551,8 @@ nav div {
   right: 0;
   text-align: center;
   width: 100%;
-  padding: 10rem 0;
+  height: 100vh;
+  padding: 15rem 0;
   background-color: #827344;
 }
 
@@ -594,6 +595,7 @@ button {
     position: relative;
     text-align: left;
     padding: 0;
+    height: auto;
     background-color: #00000000;
   }
 }
