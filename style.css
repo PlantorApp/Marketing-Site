@@ -436,7 +436,7 @@ aside button {
 @media screen and (min-width: 1024px) {
   main {
     background-size: 100%;
-    background-position: center 25px;
+    background-position: center 28px;
     padding: 34rem 0 0 0;
   }
   .hero-wrapper {
@@ -527,10 +527,14 @@ nav ul {
   border: none;
 }
 
+#main-nav ul li {
+  padding: .5rem 0;
+}
+
 #main-nav ul a {
   text-decoration: none;
-  color: grey;
-  font-size: .9rem;
+  color: #FCFAF7;
+  font-size: 1.2rem;
 }
 
 nav div {
@@ -541,13 +545,14 @@ nav div {
   display: block;
 }
 
-.show-menu header nav ul {
-  position: relative;
+#menu {
+  position: absolute;
   top: 0;
   right: 0;
   text-align: center;
-  height: 100vh;
-  background-color: #fff;
+  width: 100%;
+  padding: 10rem 0;
+  background-color: #827344;
 }
 
 button {
@@ -574,7 +579,21 @@ button {
   #menu-button {
     display: none;
   }
+  #main-nav ul li {
+    padding: 0 0;
+  }
+  #main-nav ul a {
+    font-size: .9rem;
+    color: #827344;
+    padding-left: 1.2rem;
+  }
   nav ul li {
     padding-left: 2rem;
+  }
+  #menu {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    background-color: #00000000;
   }
 }
