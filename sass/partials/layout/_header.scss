@@ -22,12 +22,13 @@ header {
 @media screen and (min-width:1024px) {
 
     header {
-        padding: 1rem 6rem;
+        width: 1280px;
+        margin: auto;
     }
 }
-@media screen and (min-width:1440px) {
+// @media screen and (min-width:1440px) {
 
-    header {
-        padding: 1rem 12rem;
-    }
-}
+//     header {
+//         padding: 1rem 12rem;
+//     }
+// }
