@@ -130,10 +130,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header-wrapper {
     max-width: 1000px;
     margin: auto;
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -214,8 +214,8 @@ main {
   margin-bottom: 4rem;
 }
 
-.team-wrapper {
-  gap: 2rem 0;
+.team-wrapper .cards {
+  margin: 2rem 0;
 }
 
 .cards {
@@ -426,15 +426,22 @@ aside {
   .hero-wrapper p, .hero-wrapper h1 {
     padding: 0 2.3rem;
   }
-  .features-wrapper, .team-wrapper {
+  .features-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+  .features-wrapper div, .team-wrapper section {
+    max-width: 1000px;
+    margin: auto;
+  }
   .features-wrapper p {
     padding: 0;
+  }
+  .team-wrapper .cards {
+    margin: 0;
   }
   .dl-wrapper {
     padding: 1rem 15rem;
@@ -445,12 +452,19 @@ aside {
     gap: 0;
     gap: 1rem;
   }
+  .team-wrapper section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   main {
     background-position: center -10px;
-    padding: 30rem 0 0 0;
+    padding: 28rem 0 0 0;
   }
   .features-wrapper div {
     max-width: 900px;

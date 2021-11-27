@@ -52,8 +52,8 @@ main {
 }
 
 // TEAM
-.team-wrapper  {
-    gap: 2rem 0;
+.team-wrapper .cards {
+    margin: 2rem 0;
 }
 .cards {
     @include cards;
@@ -223,18 +223,30 @@ aside {
         padding: 0 2.3rem;
     }
  
-    .features-wrapper, .team-wrapper{ 
+    .features-wrapper{ 
         @include heroGridOne;
         gap: 2rem;
     }
+    .features-wrapper div, .team-wrapper section{ 
+        max-width: 1000px;
+        margin: auto;
+    }
     .features-wrapper p {
         padding: 0;
+    }
+    .team-wrapper .cards {
+        margin: 0;
     }
     .dl-wrapper {
         padding: 1rem 15rem;
         @include mobileGrid;
         gap: 1rem;
     }
+    .team-wrapper section {
+        @include heroGridOne;
+        gap: 2rem;
+    }
+
 }
 
 
@@ -244,7 +256,7 @@ aside {
 
     main {
         background-position: center -10px;
-        padding: 30rem 0 0 0;
+        padding: 28rem 0 0 0;
     }
     .features-wrapper div{
         max-width: 900px;
