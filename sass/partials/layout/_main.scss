@@ -112,7 +112,7 @@ aside {
 .dl-wrapper {
     @include form;
     padding: 1rem 0;
-    gap: .5rem;
+    gap: 1rem 0;
 }
 
 
@@ -131,6 +131,9 @@ aside {
     }
     .team-wrapper {
         padding: 6rem 2.5rem;
+    }
+    .contact-wrapper {
+        padding: 10rem 2rem;
     }
 }
 
