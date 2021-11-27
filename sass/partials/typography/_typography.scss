@@ -5,19 +5,24 @@ body {
 }
 h1, h2 {
     font-family: "DM Serif Display", serif;
-    letter-spacing: 1.3px;
+    // letter-spacing: -.02px;
     font-weight: 300;
+    color: #827344;
+}
+h1 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+    line-height: 2.5rem;
 }
 h2 {
-    // color: #7D9867;
-    color: #635834;
-    font-size: 1.5rem;
-    margin:  0;
-    letter-spacing: -.02px;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    line-height: 2rem;
 }
 h3 { 
     color: #827344;
     margin: .5rem auto;
+    letter-spacing: -.5px;
 }
 p {
     color: #555555;
@@ -27,14 +32,10 @@ p {
     margin-bottom: 1rem;
 }
 .hero-wrapper p{
-    color: #555555;
+    color: #333333;
     margin: auto;
 }
 
-.features-wrapper p {
-    max-width: 90%;
-    margin: .5rem auto;
-}
 .tagline {
     margin: 0;
     font-weight: 700;
@@ -42,35 +43,32 @@ p {
 
 @media screen and (min-width:375px) {
     p {
-        font-size: .9rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (min-width:768px) {
-
-    h2 {
-        margin: 1rem 0;
-    }
-    .team-wrapper h2, .contact-wrapper h2 {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
         font-size: 1rem;
     }
 }
-@media screen and (min-width:1024px) {
 
-    h1 {
-        font-size: 4rem;
-    }
+// @media screen and (min-width:768px) {
 
-    h2 {
-        font-size: 2rem;
-    }
+//     h2 {
+//         margin: 1rem 0;
+//     }
+//     .team-wrapper h2, .contact-wrapper h2 {
+//         margin-bottom: 1rem;
+//     }
 
-}
+//     h3 {
+//         font-size: 1rem;
+//     }
+// }
+// @media screen and (min-width:1024px) {
+
+//     h1 {
+//         font-size: 4rem;
+//         left: ;
+//     }
+
+//     h2 {
+//         font-size: 2rem;
+//     }
+
+// }

@@ -4,62 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
     <title>Plantor</title>
 </head>
 <body>
     <header>
-        <img src="assets/plantor_logo.svg" alt="Plantor native app Logotype">
-        
-        <nav id="main-nav">
-            <button id="menu-button"><i class="menu-icon fas fa-bars"><span class="visually-hidden">Menu</span></i></button>
-            <div id="menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Feature</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+       <div class="header-wrapper">
+            <img src="assets/plantor_logo.svg" alt="Plantor Logo">
+            <!-- <img src="assets/Logo.png" alt="Plantor Logo"> -->
 
+            <nav id="main-nav">
+                <button id="menu-button"><i class="menu-icon fas fa-bars"><span class="visually-hidden">Menu</span></i></button>
+                <div id="menu">
+                    <button id="close"><i class="fas fa-times"></i><div class="visually-hidden">close</div></button>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Feature</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </div>
     </header>
 
     <main id="about">
         <div class="parallex">
             <section class="hero-wrapper">
-                <img src="assets/Logo.png" alt="">
                 <div>
-                    <h1 class="visually-hidden">Plantor</h1>
-                    <h2>Find Plants You Can Grow!</h2>
-                    <p>Get plant recommendations suitable to your environment. Plantor gives you plant recommendations to grow based on location, lighting, temperature, and season.</p>
+                    <h1>Find Plants You Can Grow!</h1>
+                    <p>Plantor gives plant suggestions suitable for you based on your environment’s location, lighting, temperature, and season.</p>
                 </div>
             </section>
     
             <div id="features" class="features-wrapper">
-                <h2 class="expand">Features</h2>
+                <h2 class="expand">Main Features</h2>
                 <section>
-                    <img src="assets/f1.svg" alt="">
+                    <img src="assets/f1.svg" alt="Weather Notification Illustration">
                     <h3>Weather Notification</h3>
-                    <p>Users will get notifications about seasonal changes and weather hazards</p>
+                    <p>Get notifications about seasonal changes and weather hazards</p>
                 </section>
                 <section>
-                    <img src="assets/f2.svg" alt="">
+                    <img src="assets/f2.svg" alt="Plant Suggestion Illustration">
                     <h3>Plant Suggestion</h3>
-                    <p>Providing suggestions on plants users can grow at home based on location, season & light exposure</p>
+                    <p>Provide plant suggestions based on location, season & light exposure</p>
                 </section>
                 <section>
-                    <img src="assets/f3.svg" alt="">
+                    <img src="assets/f3.svg" alt="Plant Wishlist Illustration">
                     <h3>Plant Wishlist</h3>
-                    <p>Users will be able to save plants that they want to grow in a wishlist</p>
+                    <p>Provide plant suggestions based on location, season & light exposure</p>
                 </section>
 
             </div>
             
             <aside>
-                <!-- <h2>Download Plantor App</h2> -->
+                <h2>Ready to grow some plants?</h2>
+                <p>Download the Plantor mobile app from Google Play Store or Apple App Store and start growing plants at your place!</p>
                 <div class="dl-wrapper">
                     <img src="assets/Google_Play_Store.png" alt="Google Play Logo">
                     <img src="assets/apple-app-store.png" alt="App Store Logo">
@@ -70,7 +72,7 @@
                 <h2 class="expand">Team Members</h2>
                 <section class="team5">
                     <div class="cards">
-                        <img src="assets/Mahsa.jpg" alt="Mahsa Shafiei Profile Picture">
+                        <img src="assets/Mahsa.png" alt="Mahsa Shafiei Profile Picture">
                         <div class="link-wrapper">
                             <h3>Mahsa Shafiei</h3>
                             <div class="links">
@@ -79,7 +81,7 @@
                             </div>
                         </div>
                         <p class="tagline">UI/UX Designer</p>
-                        <p>Reetu is participating more on the UI side of the design process.</p>
+                        <p>Mahsa is participating on the UI & UX side of the design process.</p>
 
                     </div>
                 </section>
@@ -144,7 +146,7 @@
                 </section>
                 <section class="team2">
                     <div class="cards">
-                        <img src="assets/Kamal.jpg" alt="Kamaljit Kaur Profile Picture">
+                        <img src="assets/Kamal.png" alt="Kamaljit Kaur Profile Picture">
                         <div class="link-wrapper">
                             <h3>Kamaljit Kaur</h3>
                             <div class="links">
@@ -210,31 +212,17 @@
                     <button>Send Message</button>
                 </form>
             </div>
+
         </div>
     </main>
 
     
     <footer>
         <div class="footer-wrapper">
-            <p>Ⓒ 2021 All Rights Reserved</p>
+            <p>Ⓒ 2021 All <br> Rights Reserved</p>
         </div>
     </footer>
     
 </body>
 </html>
 
-
-<!--       <button id="menu-button"><i class="fas fa-times"><span class="visually-hidden">Close</span>
-            </i></button> -->
-
-                    <!-- <li><a href="mailto:plantor@gmail.com"><i class="far fa-envelope"><span class="visually-hidden">Contact Us</span></i></a></li> -->
-<!--  <section class="team4">
-                    <img src="assets/img-placeholder.png" alt="">
-                    <h3>Wez Ireland</h3>
-                    <p class="tagline">Product Engineer</p>
-                    <p>Wez is responsible for back-end and database related development tasks.</p>
-                    <div class="links">
-                        <a href="https://github.com/"><i class="fab fa-github-square"></i><span class="visually-hidden">GitHub</span></a>
-                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i><span class="visually-hidden">Linked-in</span></a>
-                    </div>
-                </section> -->
