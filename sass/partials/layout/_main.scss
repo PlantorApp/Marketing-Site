@@ -79,7 +79,7 @@ main {
 // CONTACT
 .contact-wrapper {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 10rem 1.5rem;
     background-color: #E3DECE;
 }
 
@@ -118,7 +118,7 @@ aside {
 
 @media screen and (min-width:375px) {
     main {
-        padding: 18rem 0 0 0;
+        padding-top: 18rem;
     }
     aside h2{
         padding: 0 2rem;
