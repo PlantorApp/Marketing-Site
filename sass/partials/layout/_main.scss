@@ -2,23 +2,22 @@ main {
     background-image: url("../../../assets/HeroimageV02.png");
     background-attachment: fixed;
     background-size: 140%;
-    background-position: center 38px;
+    background-position: center 25px;
     background-repeat: no-repeat;
     background-color: #FCFAF7;
     padding: 16rem 0 0 0;
 }
 // HERO
 .hero-wrapper {
-    // text-align: center;
-    @include landingGrid;
     background-color: #ded9cb;
     align-content: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 0;
     justify-content: center;
     align-content: center;
 }
 .hero-wrapper div{
-    // margin-top: 1rem;
+    max-width: 250px;
+    margin: auto;
     text-align: left;
 
 }
@@ -27,10 +26,17 @@ main {
 }
 
 // FEATURE
+.hero-wrapper div, .features-wrapper h2, .features-wrapper section, .dl-wrapper , .team-wrapper h2 , .team-wrapper section, .contact-wrapper h2, .contact-wrapper section{
+    max-width: 245px;
+    margin: auto;
+}
+.features-wrapper h2, .team-wrapper h2, .contact-wrapper h2, .contact-wrapper p {
+    margin: 0.8rem auto;
+}
 .features-wrapper, .team-wrapper {
     text-align: center;
     @include mobileGrid;
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
     background-color: #FCFAF7;
 }
 .features-wrapper section:not(:last-of-type){
@@ -66,12 +72,10 @@ main {
     text-align: center;
 }
 .contact-wrapper {
-    padding: 6rem 1.5rem;
+    padding: 10rem 2rem;
     background-color: #fcfaf7;
 }
-.contact-wrapper p {
-    margin: 1rem .5rem;
-}
+
 form {
     margin: 2rem 0;
 }
@@ -114,9 +118,6 @@ aside {
     .features-wrapper p{
         max-width: 82%;
         margin: 1rem auto;
-    }
-    .contact-wrapper p {
-        margin: 1rem;
     }
     .team-wrapper {
         padding: 6rem 3rem;
@@ -221,19 +222,22 @@ aside {
         background-size: 100%;
         background-position: center 10px;
         padding: 36rem 0 0 0;
+        // width: 900px;
     }
-
-    .hero-wrapper {
-        padding: 2rem 16rem;
+    .parallex {
+        width: 1020px;
     }
+    // .hero-wrapper {
+    //     padding: 2rem 16rem;
+    // }
  
     .features-wrapper{ 
-        padding: 8rem 6rem;
+        // padding: 8rem 6rem;
         gap: 1rem 2rem;
     }
  
     .team-wrapper{ 
-        padding: 8rem ;
+        // padding: 8rem ;
     }
     .dl-wrapper {
         padding: 1rem 15rem;

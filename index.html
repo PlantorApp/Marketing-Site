@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/0a2cce0ee0.js" crossorigin="anonymous"></script>
     <title>Plantor</title>
 </head>
 <body>
     <header>
-        <img src="assets/plantor_logo.svg" alt="Plantor native app Logotype">
-        
-        <nav id="main-nav">
-            <button id="menu-button"><i class="menu-icon fas fa-bars"><span class="visually-hidden">Menu</span></i></button>
-            <div id="menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Feature</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+       <div class="header-wrapper">
+            <img src="assets/plantor_logo.svg" alt="Plantor Logo">
+            <!-- <img src="assets/Logo.png" alt="Plantor Logo"> -->
 
+            <nav id="main-nav">
+                <button id="menu-button"><i class="menu-icon fas fa-bars"><span class="visually-hidden">Menu</span></i></button>
+                <div id="menu">
+                    <button id="close"><i class="fas fa-times"></i><div class="visually-hidden">close</div></button>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Feature</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </div>
     </header>
 
     <main id="about">
         <div class="parallex">
             <section class="hero-wrapper">
-                <img src="assets/Logo.png" alt="">
                 <div>
-                    <h1 class="visually-hidden">Plantor</h1>
-                    <h2>Find Plants You Can Grow!</h2>
+                    <h1>Find Plants You Can Grow!</h1>
                     <p>Get plant recommendations suitable to your environment. Plantor gives you plant recommendations to grow based on location, lighting, temperature, and season.</p>
                 </div>
             </section>
@@ -41,19 +42,19 @@
             <div id="features" class="features-wrapper">
                 <h2 class="expand">Features</h2>
                 <section>
-                    <img src="assets/f1.svg" alt="">
+                    <img src="assets/f1.svg" alt="Weather Notification Illustration">
                     <h3>Weather Notification</h3>
-                    <p>Users will get notifications about seasonal changes and weather hazards</p>
+                    <p>Get notifications about seasonal changes and weather hazards</p>
                 </section>
                 <section>
-                    <img src="assets/f2.svg" alt="">
+                    <img src="assets/f2.svg" alt="Plant Suggestion Illustration">
                     <h3>Plant Suggestion</h3>
-                    <p>Providing suggestions on plants users can grow at home based on location, season & light exposure</p>
+                    <p>Provide plant suggestions based on location, season & light exposure</p>
                 </section>
                 <section>
-                    <img src="assets/f3.svg" alt="">
+                    <img src="assets/f3.svg" alt="Plant Wishlist Illustration">
                     <h3>Plant Wishlist</h3>
-                    <p>Users will be able to save plants that they want to grow in a wishlist</p>
+                    <p>Provide plant suggestions based on location, season & light exposure</p>
                 </section>
 
             </div>
@@ -70,7 +71,7 @@
                 <h2 class="expand">Team Members</h2>
                 <section class="team5">
                     <div class="cards">
-                        <img src="assets/Mahsa.jpg" alt="Mahsa Shafiei Profile Picture">
+                        <img src="assets/Mahsa.png" alt="Mahsa Shafiei Profile Picture">
                         <div class="link-wrapper">
                             <h3>Mahsa Shafiei</h3>
                             <div class="links">
@@ -144,7 +145,7 @@
                 </section>
                 <section class="team2">
                     <div class="cards">
-                        <img src="assets/Kamal.jpg" alt="Kamaljit Kaur Profile Picture">
+                        <img src="assets/Kamal.png" alt="Kamaljit Kaur Profile Picture">
                         <div class="link-wrapper">
                             <h3>Kamaljit Kaur</h3>
                             <div class="links">
@@ -210,6 +211,7 @@
                     <button>Send Message</button>
                 </form>
             </div>
+
         </div>
     </main>
 

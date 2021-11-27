@@ -36,7 +36,7 @@ Tables of content
 }
 
 .fab {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .links {
@@ -45,7 +45,7 @@ Tables of content
 }
 
 .links a i {
-  padding-right: .4rem;
+  padding-right: .2rem;
   color: #827344;
 }
 
@@ -59,20 +59,24 @@ body {
 
 h1, h2 {
   font-family: "DM Serif Display", serif;
-  letter-spacing: 1.3px;
+  line-height: 2.3rem;
   font-weight: 300;
+  color: #635834;
+  margin: .8rem 0;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
-  color: #635834;
   font-size: 1.5rem;
-  margin: 0;
-  letter-spacing: -.02px;
 }
 
 h3 {
   color: #827344;
   margin: .5rem auto;
+  letter-spacing: -.5px;
 }
 
 p {
@@ -131,8 +135,18 @@ p {
 }
 
 header {
-  padding: .7rem 1.5rem;
   background-color: #FCFAF7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid #b7a87877;
+}
+
+.header-wrapper {
+  padding: .5rem 1rem;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,25 +156,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  border-bottom: 1px solid #b7a87877;
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    padding: 1rem 4rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    width: 1280px;
-    margin: auto;
-  }
 }
 
 footer {
@@ -171,28 +166,24 @@ footer {
 
 body {
   margin: 0;
-  background-color: #FCFAF7;
+  background-color: #ded9cb;
 }
 
 main {
   background-image: url("../../../assets/HeroimageV02.png");
   background-attachment: fixed;
   background-size: 140%;
-  background-position: center 38px;
+  background-position: center 25px;
   background-repeat: no-repeat;
   background-color: #FCFAF7;
   padding: 16rem 0 0 0;
 }
 
 .hero-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
   background-color: #ded9cb;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -200,11 +191,22 @@ main {
 }
 
 .hero-wrapper div {
+  max-width: 250px;
+  margin: auto;
   text-align: left;
 }
 
 .hero-wrapper p {
   margin: .5rem 0;
+}
+
+.hero-wrapper div, .features-wrapper h2, .features-wrapper section, .dl-wrapper, .team-wrapper h2, .team-wrapper section, .contact-wrapper h2, .contact-wrapper section {
+  max-width: 245px;
+  margin: auto;
+}
+
+.features-wrapper h2, .team-wrapper h2, .contact-wrapper h2, .contact-wrapper p {
+  margin: 0.8rem auto;
 }
 
 .features-wrapper, .team-wrapper {
@@ -214,7 +216,7 @@ main {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 0;
-  padding: 5rem 1.5rem;
+  padding: 5rem 0;
   background-color: #FCFAF7;
 }
 
@@ -268,12 +270,8 @@ main {
 }
 
 .contact-wrapper {
-  padding: 6rem 1.5rem;
+  padding: 10rem 2rem;
   background-color: #fcfaf7;
-}
-
-.contact-wrapper p {
-  margin: 1rem .5rem;
 }
 
 form {
@@ -337,9 +335,6 @@ aside {
   .features-wrapper p {
     max-width: 82%;
     margin: 1rem auto;
-  }
-  .contact-wrapper p {
-    margin: 1rem;
   }
   .team-wrapper {
     padding: 6rem 3rem;
@@ -451,15 +446,11 @@ aside {
     background-position: center 10px;
     padding: 36rem 0 0 0;
   }
-  .hero-wrapper {
-    padding: 2rem 16rem;
+  .parallex {
+    width: 1020px;
   }
   .features-wrapper {
-    padding: 8rem 6rem;
     gap: 1rem 2rem;
-  }
-  .team-wrapper {
-    padding: 8rem;
   }
   .dl-wrapper {
     padding: 1rem 15rem;
@@ -573,17 +564,37 @@ nav div {
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center;
   width: 100%;
   height: 100vh;
-  padding: 15rem 0;
   background-color: #827344;
 }
 
-button {
+#menu ul {
+  margin: 50% auto;
+}
+
+#menu-button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   color: #827344;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: #827344;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+#close i {
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
