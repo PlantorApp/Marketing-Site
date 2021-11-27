@@ -131,7 +131,9 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    max-width: 1024px;
+    max-width: 1000px;
+    margin: auto;
+    padding: .5rem 2rem;
   }
 }
 
@@ -350,24 +352,24 @@ aside {
     max-width: 287px;
   }
   aside {
-    padding: 6rem 5rem;
+    padding: 6rem 0;
+  }
+  aside p, aside h2 {
+    max-width: 300px;
+    margin: 1rem auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   main {
     background-color: #ded9cb;
-    background-size: 100%;
-    background-position: center 50px;
+    background-position: center 6px;
     padding: 15rem 0 0 0;
   }
   .hero-wrapper {
     max-width: 375px;
     margin: auto;
     padding: 0;
-  }
-  .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
-    margin: 0;
   }
   .features-wrapper p {
     max-width: 100%;
@@ -397,13 +399,15 @@ aside {
     margin: .8rem;
   }
   .dl-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
-    padding: 1rem 12rem;
-    gap: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 1rem 0;
+    padding: 1rem;
   }
   #close {
     display: none;
@@ -434,14 +438,12 @@ aside {
   }
   .dl-wrapper {
     padding: 1rem 15rem;
-  }
-  aside p {
-    max-width: 300px;
-    margin: .5rem auto;
-  }
-  aside h2 {
-    max-width: 240px;
-    margin: .5rem auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+    gap: 1rem;
   }
 }
 
@@ -489,10 +491,7 @@ header img {
 
 @media screen and (min-width: 768px) {
   header img {
-    width: 24px;
-  }
-  img {
-    max-width: 100%;
+    width: 80px;
   }
   .features-wrapper img {
     max-width: 100%;

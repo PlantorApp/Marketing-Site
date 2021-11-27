@@ -20,8 +20,9 @@ header {
 @media screen and (min-width:768px) {
 
     header {
-        max-width: 1024px;
-
+        max-width: 1000px;
+        margin: auto;
+        padding: .5rem 2rem;
     }
 }
 // @media screen and (min-width:1024px) {
