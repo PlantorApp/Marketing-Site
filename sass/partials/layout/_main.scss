@@ -120,10 +120,13 @@ aside {
         padding: 0 2rem;
     }
     .contact-wrapper p {
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
     .features-wrapper p {
         padding: 0 1rem;
+    }
+    .team-wrapper {
+        padding: 6rem 2.5rem;
     }
 }
 
@@ -169,12 +172,16 @@ aside {
         max-width: 100%;
         margin: 0;
     }
-    .features-wrapper, .team-wrapper{ 
-        padding: 8rem 2rem;
-    }
+
     .contact-wrapper h2, .contact-wrapper p , input, textarea{
         max-width: 350px;
         margin: auto;
+    }
+    .contact-wrapper p {
+        padding: .6rem 0;
+    }
+    .contact-wrapper h2 {
+        padding: .6rem 0;
     }
     form {
         @include form;
@@ -198,23 +205,32 @@ aside {
     main {
         background-size: 100%;
         background-position: center 10px;
-        padding: 18rem 0 0 0;
-    }
-    .parallex {
-        width: 1020px;
+        padding: 19rem 0 0 0;
     }
     .hero-wrapper div{
-        max-width: 700px;
+        max-width: 1024px;
     }
     .hero-wrapper p, .hero-wrapper h1 {
         padding: 0 2.3rem;
     }
+ 
     .features-wrapper, .team-wrapper{ 
         @include heroGridOne;
-        gap: 1rem 2rem;
+        gap: 2rem;
+    }
+    .features-wrapper p {
+        padding: 0;
     }
     .dl-wrapper {
         padding: 1rem 15rem;
+    }
+    aside p{
+        max-width: 300px;
+        margin: .5rem auto;
+    }
+    aside h2 {
+        max-width: 240px;
+        margin: .5rem auto;
     }
 }
 
@@ -225,16 +241,10 @@ aside {
 
     main {
         background-position: center -10px;
-        padding: 42rem 0 0 0;
+        padding: 30rem 0 0 0;
     }
-    .hero-wrapper {
-        padding: 3rem 18rem;
+    .features-wrapper div{
+        max-width: 900px;
+        margin: auto;
     }
-    .features-wrapper, .team-wrapper{ 
-        padding: 10rem 12rem;
-    }
-    .team-wrapper{ 
-        padding: 10rem 18rem;
-    }
-
 }
