@@ -129,15 +129,9 @@ header {
           align-items: center;
 }
 
-@media screen and (min-width: 375px) {
-  .header-wrapper {
-    padding: .5rem 1.5rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .header-wrapper {
-    padding: .5rem 4rem;
+  header {
+    max-width: 1024px;
   }
 }
 
@@ -262,7 +256,7 @@ main {
 
 .contact-wrapper {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 10rem 1.5rem;
   background-color: #E3DECE;
 }
 
@@ -321,7 +315,7 @@ aside {
 
 @media screen and (min-width: 375px) {
   main {
-    padding: 18rem 0 0 0;
+    padding-top: 18rem;
   }
   aside h2 {
     padding: 0 2rem;
