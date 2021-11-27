@@ -147,6 +147,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  border-bottom: 1px solid #b7a87877;
 }
 
 @media screen and (min-width: 768px) {
@@ -157,13 +158,13 @@ header {
 
 @media screen and (min-width: 1024px) {
   header {
-    padding: 1rem 6rem;
+    padding: 1rem 3rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   header {
-    padding: 1rem 12rem;
+    max-width: 1024px;
   }
 }
 
@@ -452,11 +453,11 @@ aside {
 @media screen and (min-width: 1024px) {
   main {
     background-size: 100%;
-    background-position: center 20px;
-    padding: 34rem 0 0 0;
+    background-position: center 10px;
+    padding: 36rem 0 0 0;
   }
   .hero-wrapper {
-    padding: 3rem 14rem;
+    padding: 2rem 16rem;
   }
   .features-wrapper {
     padding: 8rem 6rem;
@@ -528,6 +529,7 @@ header img {
     max-width: 100%;
   }
   .hero-wrapper img {
+    margin: auto;
     width: 60px;
     opacity: 100%;
   }
