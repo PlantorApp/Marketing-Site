@@ -6,13 +6,13 @@ body {
 h1, h2 {
     font-family: "DM Serif Display", serif;
     // letter-spacing: -.02px;
-    line-height: 2.3rem;
+    line-height: 2.5rem;
     font-weight: 300;
     color: #827344;
 }
 h1 {
     font-size: 2.2rem;
-    margin: .5rem 0;
+    margin: 1rem 0;
 }
 h2 {
     font-size: 1.8rem;
@@ -42,11 +42,7 @@ p {
 
 @media screen and (min-width:375px) {
     p {
-        font-size: .9rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-        line-height: 1.2;
+        font-size: 1rem;
     }
 }
 

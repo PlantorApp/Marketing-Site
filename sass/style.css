@@ -59,14 +59,14 @@ body {
 
 h1, h2 {
   font-family: "DM Serif Display", serif;
-  line-height: 2.3rem;
+  line-height: 2.5rem;
   font-weight: 300;
   color: #827344;
 }
 
 h1 {
   font-size: 2.2rem;
-  margin: .5rem 0;
+  margin: 1rem 0;
 }
 
 h2 {
@@ -101,11 +101,7 @@ p {
 
 @media screen and (min-width: 375px) {
   p {
-    font-size: .9rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-    line-height: 1.2;
+    font-size: 1rem;
   }
 }
 
@@ -116,7 +112,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  border-bottom: 1px solid #b7a87877;
+  border-bottom: 1px solid #b7a878bb;
 }
 
 .header-wrapper {
@@ -179,15 +175,15 @@ main {
 .hero-wrapper div {
   max-width: 250px;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .hero-wrapper p {
-  margin: .5rem 0;
+  margin: .5rem;
 }
 
 .hero-wrapper div, .features-wrapper h2, .features-wrapper section, .dl-wrapper, .team-wrapper h2, .team-wrapper section, .contact-wrapper h2, .contact-wrapper section {
-  max-width: 245px;
+  max-width: 300px;
   margin: auto;
 }
 
@@ -207,6 +203,7 @@ main {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 0;
+  justify-items: center;
   padding: 5rem 0;
   background-color: #FCFAF7;
 }
@@ -299,7 +296,7 @@ input:focus, textarea:focus {
 
 aside {
   background-color: #E3DECE;
-  padding: 6rem 1.5rem;
+  padding: 6rem 2rem;
   text-align: center;
 }
 
@@ -312,17 +309,22 @@ aside {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   gap: 1rem 0;
+  padding: 1rem 0;
+  gap: .5rem;
 }
 
 @media screen and (min-width: 375px) {
   main {
     padding: 18rem 0 0 0;
   }
+  aside h2 {
+    padding: 0 2rem;
+  }
   .contact-wrapper p {
     padding: 0.5rem;
   }
   .features-wrapper p {
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 
@@ -351,7 +353,12 @@ aside {
     background-color: #ded9cb;
     background-size: 100%;
     background-position: center 50px;
-    padding: 28rem 0 0 0;
+    padding: 15rem 0 0 0;
+  }
+  .hero-wrapper {
+    max-width: 375px;
+    margin: auto;
+    padding: 0;
   }
   .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
     margin: 0;
@@ -363,22 +370,9 @@ aside {
   .features-wrapper, .team-wrapper {
     padding: 8rem 2rem;
   }
-  .team-wrapper, .features-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    gap: 2rem;
-  }
-  .cards {
-    max-width: 100%;
-  }
-  .contact-wrapper {
-    padding: 6rem 10rem;
-  }
-  .contact-wrapper p {
-    margin: 1.3rem 0;
+  .contact-wrapper h2, .contact-wrapper p, input, textarea {
+    max-width: 350px;
+    margin: auto;
   }
   form {
     display: -webkit-box;
@@ -389,10 +383,6 @@ aside {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     gap: 1rem 0;
-  }
-  input, textarea, .contact-wrapper p {
-    width: 450px;
-    margin: 0 auto;
   }
   input:first-of-type {
     margin: .8rem;
@@ -415,7 +405,7 @@ aside {
   main {
     background-size: 100%;
     background-position: center 10px;
-    padding: 34rem 0 0 0;
+    padding: 18rem 0 0 0;
   }
   .parallex {
     width: 1020px;
@@ -423,7 +413,14 @@ aside {
   .hero-wrapper div {
     max-width: 700px;
   }
-  .features-wrapper {
+  .hero-wrapper p, .hero-wrapper h1 {
+    padding: 0 2.3rem;
+  }
+  .features-wrapper, .team-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     gap: 1rem 2rem;
   }
   .dl-wrapper {
