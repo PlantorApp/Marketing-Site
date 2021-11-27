@@ -75,8 +75,6 @@ main {
 // CONTACT
 .contact-wrapper {
     text-align: center;
-}
-.contact-wrapper {
     padding: 10rem 2rem;
     background-color: #E3DECE;
 }
@@ -117,6 +115,7 @@ aside {
     main {
         padding: 18rem 0 0 0;
     }
+
     .contact-wrapper p {
         padding: 0.5rem;
     }
@@ -137,10 +136,13 @@ aside {
     .features-wrapper section {
         margin-bottom: 5rem;
     }
-    .hero-wrapper {
-        padding: 2rem 2.5rem;
+    .hero-wrapper div{
+        padding: 1rem 0;
+        max-width: 287px;
     }
-
+    aside {
+        padding: 6rem 5rem;
+    }
 }
 
 
@@ -207,24 +209,24 @@ aside {
     main {
         background-size: 100%;
         background-position: center 10px;
-        padding: 36rem 0 0 0;
+        padding: 34rem 0 0 0;
         // width: 900px;
     }
     .parallex {
         width: 1020px;
+    }
+    .hero-wrapper div{
+        max-width: 700px;
     }
     // .hero-wrapper {
     //     padding: 2rem 16rem;
     // }
  
     .features-wrapper{ 
-        // padding: 8rem 6rem;
         gap: 1rem 2rem;
     }
  
-    .team-wrapper{ 
-        // padding: 8rem ;
-    }
+ 
     .dl-wrapper {
         padding: 1rem 15rem;
     }

@@ -65,12 +65,12 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: .5rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 1.5rem 0;
 }
 
@@ -106,27 +106,6 @@ p {
   h2 {
     font-size: 1.8rem;
     line-height: 1.2;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  h2 {
-    margin: 1rem 0;
-  }
-  .team-wrapper h2, .contact-wrapper h2 {
-    margin-bottom: 1rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2rem;
   }
 }
 
@@ -168,7 +147,7 @@ header {
 footer {
   padding: 5rem 3rem;
   text-align: center;
-  background-color: #FCFAF7;
+  background-color: #E3DECE;
 }
 
 body {
@@ -280,9 +259,6 @@ main {
 
 .contact-wrapper {
   text-align: center;
-}
-
-.contact-wrapper {
   padding: 10rem 2rem;
   background-color: #E3DECE;
 }
@@ -361,8 +337,12 @@ aside {
   .features-wrapper section {
     margin-bottom: 5rem;
   }
-  .hero-wrapper {
-    padding: 2rem 2.5rem;
+  .hero-wrapper div {
+    padding: 1rem 0;
+    max-width: 287px;
+  }
+  aside {
+    padding: 6rem 5rem;
   }
 }
 
@@ -435,10 +415,13 @@ aside {
   main {
     background-size: 100%;
     background-position: center 10px;
-    padding: 36rem 0 0 0;
+    padding: 34rem 0 0 0;
   }
   .parallex {
     width: 1020px;
+  }
+  .hero-wrapper div {
+    max-width: 700px;
   }
   .features-wrapper {
     gap: 1rem 2rem;
