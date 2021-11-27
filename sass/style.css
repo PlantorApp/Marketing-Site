@@ -61,7 +61,7 @@ h1, h2 {
   font-family: "DM Serif Display", serif;
   line-height: 2.3rem;
   font-weight: 300;
-  color: #635834;
+  color: #827344;
 }
 
 h1 {
@@ -90,7 +90,7 @@ p {
 }
 
 .hero-wrapper p {
-  color: #555555;
+  color: #333333;
   margin: auto;
 }
 
@@ -156,6 +156,12 @@ header {
 @media screen and (min-width: 375px) {
   .header-wrapper {
     padding: .5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    padding: .5rem 4rem;
   }
 }
 
@@ -278,7 +284,7 @@ main {
 
 .contact-wrapper {
   padding: 10rem 2rem;
-  background-color: #fcfaf7;
+  background-color: #E3DECE;
 }
 
 form {
@@ -316,7 +322,7 @@ input:focus, textarea:focus {
 }
 
 aside {
-  background-color: #B7A878;
+  background-color: #E3DECE;
   padding: 6rem 1.5rem;
   text-align: center;
 }
@@ -367,24 +373,6 @@ aside {
     background-position: center 50px;
     padding: 28rem 0 0 0;
   }
-  .hero-wrapper div {
-    text-align: left;
-  }
-  .hero-wrapper p {
-    padding: 0;
-  }
-  .hero-wrapper {
-    background-color: #ded9cb;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
-    grid: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 3rem 6rem;
-  }
   .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
     margin: 0;
   }
@@ -401,6 +389,7 @@ aside {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    gap: 2rem;
   }
   .cards {
     max-width: 100%;
@@ -436,6 +425,9 @@ aside {
     gap: .5rem;
     padding: 1rem 12rem;
     gap: 2rem;
+  }
+  #close {
+    display: none;
   }
 }
 
@@ -620,6 +612,7 @@ nav div {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    margin: unset;
   }
   #menu-button {
     display: none;

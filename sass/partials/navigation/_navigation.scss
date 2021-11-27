@@ -70,7 +70,9 @@ nav div {
     #menu ul {
         display: flex;
         flex-flow: row nowrap;
+        margin: unset;
     }
+  
     #menu-button {
         display: none;
     }

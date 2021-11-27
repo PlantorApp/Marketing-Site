@@ -78,7 +78,7 @@ main {
 }
 .contact-wrapper {
     padding: 10rem 2rem;
-    background-color: #fcfaf7;
+    background-color: #E3DECE;
 }
 
 form {
@@ -103,7 +103,7 @@ input:focus, textarea:focus {
 
 // ASIDE
 aside {
-    background-color: #B7A878;
+    background-color: #E3DECE;
     padding: 6rem 1.5rem;
     text-align: center;
     // color: #FCFAF7;
@@ -151,20 +151,6 @@ aside {
         background-position: center 50px;
         padding: 28rem 0 0 0;
     }
-    .hero-wrapper div{
-        text-align: left;
-    }
-    .hero-wrapper p{
-        padding: 0;
-    }
-    
-    .hero-wrapper  {
-        background-color: #ded9cb;
-        @include heroGrid;
-        grid: 1rem;
-        align-items: center;
-        padding: 3rem 6rem;
-    }
 
     .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type)  {
         margin: 0;
@@ -179,6 +165,7 @@ aside {
 
     .team-wrapper, .features-wrapper {
         @include featureGrid;
+        gap: 2rem;
     }
 
     .cards {
@@ -207,6 +194,9 @@ aside {
         padding: 1rem 12rem;
         gap: 2rem;
    
+    }
+    #close {
+        display: none;
     }
     
 
