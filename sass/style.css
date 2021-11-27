@@ -198,6 +198,15 @@ main {
   margin: 0;
 }
 
+.features-wrapper div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+  justify-items: center;
+}
+
 .features-wrapper, .team-wrapper {
   text-align: center;
   display: -ms-grid;
@@ -206,7 +215,7 @@ main {
       grid-template-columns: 1fr;
   gap: 0;
   justify-items: center;
-  padding: 5rem 1.5rem;
+  padding: 8rem 1.5rem;
   background-color: #FCFAF7;
 }
 
@@ -426,13 +435,6 @@ aside {
   .hero-wrapper p, .hero-wrapper h1 {
     padding: 0 2.3rem;
   }
-  .features-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
   .features-wrapper div, .team-wrapper section {
     max-width: 1000px;
     margin: auto;
@@ -452,12 +454,15 @@ aside {
     gap: 0;
     gap: 1rem;
   }
-  .team-wrapper section {
+  .team-wrapper section, .features-wrapper div {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+  .team-wrapper h2 {
+    margin-bottom: 2rem;
   }
 }
 

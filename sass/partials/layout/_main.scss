@@ -30,7 +30,7 @@ main {
     max-width: 300px;
     margin: auto;
 }
- .contact-wrapper h2, .contact-wrapper p {
+.contact-wrapper h2, .contact-wrapper p {
     margin: 0.8rem auto;
 }
 .features-wrapper h2 {
@@ -40,11 +40,15 @@ main {
     padding: 0 1rem;
     margin: 0;
 }
+.features-wrapper div {
+    @include mobileGrid;
+    justify-items: center;
+}
 .features-wrapper, .team-wrapper {
     text-align: center;
     @include mobileGrid;
     justify-items: center;
-    padding: 5rem 1.5rem;
+    padding: 8rem 1.5rem;
     background-color: #FCFAF7;
 }
 .features-wrapper section:not(:last-of-type){
@@ -156,7 +160,6 @@ aside {
     aside {
         padding: 6rem 0;
     }
-
     aside p, aside h2 {
         max-width: 300px;
         margin: 1rem auto;
@@ -201,7 +204,6 @@ aside {
         @include form;
         padding: 1rem;
     }
-
     #close {
         display: none;
     }
@@ -222,11 +224,6 @@ aside {
     .hero-wrapper p, .hero-wrapper h1 {
         padding: 0 2.3rem;
     }
- 
-    .features-wrapper{ 
-        @include heroGridOne;
-        gap: 2rem;
-    }
     .features-wrapper div, .team-wrapper section{ 
         max-width: 1000px;
         margin: auto;
@@ -242,9 +239,12 @@ aside {
         @include mobileGrid;
         gap: 1rem;
     }
-    .team-wrapper section {
+    .team-wrapper section, .features-wrapper div {
         @include heroGridOne;
         gap: 2rem;
+    }
+    .team-wrapper  h2 {
+        margin-bottom: 2rem;
     }
 
 }
