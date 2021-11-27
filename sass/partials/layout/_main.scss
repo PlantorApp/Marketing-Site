@@ -33,6 +33,10 @@ main {
 .features-wrapper h2, .team-wrapper h2, .contact-wrapper h2, .contact-wrapper p {
     margin: 0.8rem auto;
 }
+.features-wrapper p {
+    padding: 0 .5rem;
+    margin: 0;
+}
 .features-wrapper, .team-wrapper {
     text-align: center;
     @include mobileGrid;
@@ -49,6 +53,7 @@ main {
 }
 .cards {
     @include cards;
+    gap: 3rem 0;
 }
 .team-wrapper h3, .team-wrapper p{
     text-align: left;
@@ -112,27 +117,18 @@ aside {
     main {
         padding: 18rem 0 0 0;
     }
-    .hero-wrapper  {
-        padding: 2rem  1.5rem;
+    .contact-wrapper p {
+        padding: 0.5rem;
     }
-    .features-wrapper p{
-        max-width: 82%;
-        margin: 1rem auto;
+    .features-wrapper p {
+        padding: 0;
     }
-    .team-wrapper {
-        padding: 6rem 3rem;
-    }
-    
 }
 
 @media screen and (min-width:425px) {
     main {
         background-size: 120%;
         background-position: center 40px;
-    }
-    .cards {
-        max-width: 70%;
-        margin: 0 auto;
     }
     .contact-wrapper, .features-wrapper {
         padding: 6rem 3rem;

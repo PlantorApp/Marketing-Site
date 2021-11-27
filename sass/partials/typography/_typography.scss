@@ -9,13 +9,16 @@ h1, h2 {
     line-height: 2.3rem;
     font-weight: 300;
     color: #635834;
-    margin: .8rem 0;
 }
 h1 {
     font-size: 2rem;
+    margin: .5rem 0;
+
 }
 h2 {
     font-size: 1.5rem;
+    margin: 1.5rem 0;
+
 }
 h3 { 
     color: #827344;
@@ -34,10 +37,6 @@ p {
     margin: auto;
 }
 
-.features-wrapper p {
-    max-width: 90%;
-    margin: .5rem auto;
-}
 .tagline {
     margin: 0;
     font-weight: 700;
