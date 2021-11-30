@@ -178,7 +178,14 @@ aside {
         margin: auto;
         padding: 0;
     }
-
+    .features-wrapper,  .team-wrapper {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .contact-wrapper {
+        padding-top: 10rem;
+ 
+    }
     .features-wrapper p {
         max-width: 100%;
         margin: 0;
