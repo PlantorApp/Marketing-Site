@@ -130,8 +130,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    max-width: 1024px;
+  .header-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 2rem;
   }
 }
 
@@ -175,6 +177,7 @@ main {
 
 .hero-wrapper p {
   margin: .5rem;
+  padding: 0 .8rem;
 }
 
 .hero-wrapper div, .features-wrapper h2, .features-wrapper section, .dl-wrapper, .team-wrapper h2, .team-wrapper section, .contact-wrapper h2, .contact-wrapper section {
@@ -182,13 +185,26 @@ main {
   margin: auto;
 }
 
-.features-wrapper h2, .team-wrapper h2, .contact-wrapper h2, .contact-wrapper p {
+.contact-wrapper h2, .contact-wrapper p {
   margin: 0.8rem auto;
 }
 
+.features-wrapper h2 {
+  margin: 2rem auto;
+}
+
 .features-wrapper p {
-  padding: 0 .5rem;
+  padding: 0 1rem;
   margin: 0;
+}
+
+.features-wrapper div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 0;
+  justify-items: center;
 }
 
 .features-wrapper, .team-wrapper {
@@ -199,16 +215,18 @@ main {
       grid-template-columns: 1fr;
   gap: 0;
   justify-items: center;
-  padding: 5rem 1.5rem;
+  padding: 8rem 1.5rem;
   background-color: #FCFAF7;
 }
 
-.features-wrapper section:not(:last-of-type) {
-  margin-bottom: 4rem;
+@media sceen and (max-width: 699px) {
+  .features-wrapper section:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
 }
 
-.team-wrapper {
-  gap: 2rem 0;
+.team-wrapper .cards {
+  margin: 2rem 0;
 }
 
 .cards {
@@ -305,7 +323,7 @@ aside {
           flex-flow: column wrap;
   gap: 1rem 0;
   padding: 1rem 0;
-  gap: .5rem;
+  gap: 1rem 0;
 }
 
 @media screen and (min-width: 375px) {
@@ -323,6 +341,9 @@ aside {
   }
   .team-wrapper {
     padding: 6rem 2.5rem;
+  }
+  .contact-wrapper {
+    padding: 10rem 2rem;
   }
 }
 
@@ -342,15 +363,18 @@ aside {
     max-width: 287px;
   }
   aside {
-    padding: 6rem 5rem;
+    padding: 6rem 0;
+  }
+  aside p, aside h2 {
+    max-width: 300px;
+    margin: 1rem auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   main {
     background-color: #ded9cb;
-    background-size: 100%;
-    background-position: center 50px;
+    background-position: center 6px;
     padding: 15rem 0 0 0;
   }
   .hero-wrapper {
@@ -358,8 +382,12 @@ aside {
     margin: auto;
     padding: 0;
   }
-  .features-wrapper section:not(:first-of-type), .team-wrapper section:not(:first-of-type) {
-    margin: 0;
+  .features-wrapper, .team-wrapper {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .contact-wrapper {
+    padding-top: 10rem;
   }
   .features-wrapper p {
     max-width: 100%;
@@ -389,13 +417,15 @@ aside {
     margin: .8rem;
   }
   .dl-wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
-    padding: 1rem 12rem;
-    gap: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 1rem 0;
+    padding: 1rem;
   }
   #close {
     display: none;
@@ -414,33 +444,41 @@ aside {
   .hero-wrapper p, .hero-wrapper h1 {
     padding: 0 2.3rem;
   }
-  .features-wrapper, .team-wrapper {
+  .features-wrapper div, .team-wrapper section {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .features-wrapper p {
+    padding: 0;
+  }
+  .team-wrapper .cards {
+    margin: 0;
+  }
+  .dl-wrapper {
+    padding: 1rem 15rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+    gap: 1rem;
+  }
+  .team-wrapper section, .features-wrapper div {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-  .features-wrapper p {
-    padding: 0;
-  }
-  .dl-wrapper {
-    padding: 1rem 15rem;
-  }
-  aside p {
-    max-width: 300px;
-    margin: .5rem auto;
-  }
-  aside h2 {
-    max-width: 240px;
-    margin: .5rem auto;
+  .team-wrapper h2 {
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
   main {
     background-position: center -10px;
-    padding: 30rem 0 0 0;
+    padding: 28rem 0 0 0;
   }
   .features-wrapper div {
     max-width: 900px;
@@ -454,7 +492,7 @@ img {
 }
 
 header img {
-  width: 80px;
+  width: 70px;
 }
 
 .hero-wrapper img {
@@ -468,7 +506,7 @@ header img {
 }
 
 .dl-wrapper img {
-  width: 40%;
+  max-width: 180px;
   margin: auto;
 }
 
@@ -481,10 +519,7 @@ header img {
 
 @media screen and (min-width: 768px) {
   header img {
-    width: 24px;
-  }
-  img {
-    max-width: 100%;
+    width: 80px;
   }
   .features-wrapper img {
     max-width: 100%;
@@ -620,3 +655,4 @@ nav div {
     background-color: #00000000;
   }
 }
+/*# sourceMappingURL=style.css.map */

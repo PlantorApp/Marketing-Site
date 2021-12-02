@@ -51,8 +51,11 @@ main {
     padding: 8rem 1.5rem;
     background-color: #FCFAF7;
 }
-.features-wrapper section:not(:last-of-type){
-    margin-bottom: 4rem;
+
+@media sceen and (max-width: 699px) {
+    .features-wrapper section:not(:last-of-type) {
+        margin-bottom: 4rem;
+    }
 }
 
 // TEAM
