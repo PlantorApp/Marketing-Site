@@ -412,11 +412,11 @@ aside h2 {
     padding: 15rem 0 0 0;
   }
   .features-wrapper, .team-wrapper {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 2.75rem;
   }
   .contact-wrapper {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
   .features-wrapper p {
     max-width: 100%;
@@ -430,7 +430,7 @@ aside h2 {
     padding: .6rem 0;
   }
   .contact-wrapper h2 {
-    padding: .6rem 0;
+    line-height: 1.5;
   }
   form {
     display: -webkit-box;
@@ -454,11 +454,11 @@ aside h2 {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     gap: 1rem 0;
-    padding: 1rem;
+    padding-top: 1rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   main {
     background-size: 100%;
     background-position: center 10px;
@@ -499,16 +499,15 @@ aside h2 {
   .team-wrapper h2 {
     margin-bottom: 2rem;
   }
-}
-
-@media screen and (min-width: 1440px) {
+  .team-wrapper {
+    padding-bottom: 5rem;
+  }
+  footer {
+    padding-bottom: 7.5rem;
+  }
   main {
     background-position: center -10px;
     padding: 28rem 0 0 0;
-  }
-  .features-wrapper div {
-    max-width: 900px;
-    margin: auto;
   }
 }
 
