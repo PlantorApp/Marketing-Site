@@ -23,12 +23,10 @@ main {
 }
 .hero-wrapper p {
     margin: .5rem;
-    padding: 0 .8rem;
 }
 
 // FEATURE
 .hero-wrapper div, .features-wrapper h2, .features-wrapper section, .dl-wrapper , .team-wrapper h2 , .team-wrapper section, .contact-wrapper h2, .contact-wrapper section{
-    max-width: 300px;
     margin: auto;
 }
 .team-wrapper section {
@@ -158,7 +156,7 @@ aside h2 {
         padding: 5rem 2.5rem 2.5rem 2.5rem;
     }
     .contact-wrapper {
-        padding: 10rem 2rem;
+        padding: 3rem 2rem;
     }
 }
 
@@ -200,7 +198,7 @@ aside h2 {
 }
 
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
     main {
         background-color: #ded9cb;
         background-position: center 6px;
@@ -218,6 +216,9 @@ aside h2 {
     .features-wrapper p {
         max-width: 100%;
         margin: 0;
+    }
+    aside h2 {
+        max-width: 500px;
     }
 
     .contact-wrapper h2, .contact-wrapper p , input, textarea{
@@ -254,6 +255,9 @@ aside h2 {
     }
     .hero-wrapper p, .hero-wrapper h1 {
         padding: 0 2.3rem;
+    }
+    .hero-wrapper p {
+        margin-bottom: 1rem;
     }
     .features-wrapper div, .team-wrapper section{ 
         max-width: 1000px;
